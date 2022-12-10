@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav panel -->
+    <header class="head">
+      <nav class="navbar"><a href="/src/index.html">На головну</a></nav>
+    </header>
+
+
+    <main class="main">
+    <aside class="user-interface">
+      <h1 class="welcome">Hi,</h1>
+      <h2 class="balance ">Ваш Баланс: <span class="balance_">3000</span>uah</h2>
+      <p class="lessons row">Уроків Залишилося: 0</p>
+      <p class="abon-user row">Придбати Абонемент</p>
+      <p class="deposit row">Поповнити рахунок</p>
+      <p class="delete row">Видалити акаунт</p>
+    </aside>
+    <div class="course">
+      <div class="course-en-user">
+        <img class="card-flag-en" src="/images/ebglish.png" />
+        <h2 class="card-title">Англійська (В1-В2)</h2>
+        <ul class="card-list">
+          <h2>На Курсі:</h2>
+          <li class="list-text">Повторення</li>
+          <li class="list-text">Інтерактивні Вправи</li>
+          <li class="list-text">Уроки з носієм мови</li>
+          <li class="list-text">Творче Завдання</li>
+        </ul>
+        <div class="price">
+          <button class="card-button-en" type="submit">Продовжити</button>
+        </div>
+      </div>
+    </div>
+      <section id="abonements-user-id" class="vanish">
+        
+        <div id="abonements-user" >
+          <div class="standart">
+            <h3 class="cop-title">Стандарт</h3>
+            <ul class="card-list">
+              <li class="li-txt">4 Заняття</li>
+              <li class="li-txt">6 годин</li>
+              <li class="li-txt">160грн/урок</li>
+            </ul>
+            <button  id="copper" class="copper-btn" type="submit">Придбати</button>
+          </div>
+          <div class="standartP">
+            <h3 class="sil-title">Стандарт +</h3>
+            <ul class="card-list">
+              <li class="li-txt">8 Занять</li>
+              <li class="li-txt">12 годин</li>
+              <li class="li-txt">150грн/урок</li>
+            </ul>
+            <button id="silver" class="silver-btn" type="submit">Придбати</button>
+          </div>
+          <div class="premium">
+            <h3 class="p-title">Преміум</h3>
+            <ul class="p-card-list">
+              <li class="li-txt">12 Занять</li>
+              <li class="li-txt">18 годин</li>
+              <li class="li-txt">140грн/урок</li>
+            </ul>
+            <button id="gold" class="gold-btn" type="submit">Придбати</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="log-form ">
+      <button class="close-modal">&times;</button>
+      <h1 class="log-title">Log <span id="in">In</span></h1>
+      <!-- <img class="logo-form" src="/images/logos.png" alt="logo image" /> -->
+      
+      <label class="form-name">Email:</label>
+      <input id="email" class="email" type="text" placeholder="example@gmail.com" />
+      <br />
+      <label class="form-name">Password:</label>
+      <input  id="password" class="password" type="password" placeholder="********" />
+      <button id="login-btn" class="login-btn">Log In</button>
+      <p id="sign-up" class="redirect">Sign UP</p>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="sign-up ">
+      <button class="close-modal1">&times;</button>
+      <h1 class="sign-up-title">Sign <span id="up">UP</span></h1>
+      <form class="reg-form">
+        <label class="label-names"> Ім'я:</label>
+        <input id="name" type="text" placeholder="Taras" />
+        <label class="label-names">Прізвище:</label>
+        <input id="surname" type="text" placeholder="Shevchenko" />
+        <label class="label-names">Email:</label>
+        <input id="email" type="text" placeholder="example@gmail.com"/>
+        <label class="label-names">Пароль:</label>
+        <input id="password" type="password" placeholder="******" />
+        <button id="sign-up-btn" class="sign-up-btn">Sign Up</button>
+      </form>
+      <p id="sign-in" class="redirect">Sign In</p>
+    </div>
+    <div class="overlay1 ghost"></div>
+
+    <script src="/src/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/44fbb523d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

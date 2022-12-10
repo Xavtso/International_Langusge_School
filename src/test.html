@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ua-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+    />
+    
+    <title>Online-Test</title>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar"><a href="index.html"> На Головну</a></nav>
+    </header>
+    <section class="choise">
+      <h1>Яку мову ви бажаєте вивчати?</h1>
+      <div class="coop">
+        <div id="ua">
+          <img class="flag-choise" src="/images/ukraine.png"/>
+          <h2 class="choise-text">Українську</h2>
+        </div>
+        <div id="en">
+          <img class="flag-choise" src="/images/ebglish.png" style="width:200px ; height:130px;"/>
+          <h2 class="choise-text">Англійську</h2>
+          
+        </div>
+        <div id="pl">
+          <img class="flag-choise" src="/images/poland.jpg" style="width:200px ; height:130px;"/>
+          <h2 class="choise-text">Польську</h2>
+        </div>
+      </div> 
+    </section>
+    <section class="quiz">
+      <div class="test ">
+        <h2 class="question">Hey,there can be your question</h2>
+        <ul class="answers">
+        <li class="answer-font"><input id="radio" class="answer-item" type="radio" name="q${data.numid}" value="1">And answer there</li>
+        <li class="answer-font"><input id="radio" class="answer-item" type="radio" name="q${data.numid}" value="2"> And answer there</li>
+        <li class="answer-font"><input id="radio" class="answer-item" type="radio" name="q${data.numid}" value="3"> And answer there</li>
+        <li class="answer-font"><input id="radio" class="answer-item" type="radio" name="q${data.numid}" value="4"> And answer there</li>
+      </ul>
+      <span class="indicator">1/30</span>
+      
+    </div>
+  </div>
+</section>
+<!-- <div class="test "> -->
+  <!-- <h2 class="question">We are _____ .</h2>
+    <ul class="answers">
+      <li class="answer-font" ><input class="answer-item" type="radio" name="q1">a</li>
+      <li class="answer-font"><input class="answer-item" type="radio" name="q1">b</li>
+      <li class="answer-font"><input class="answer-item" type="radio" name="q1">c</li>
+      <li class="answer-font"><input class="answer-item" type="radio" name="q1">d</li>
+    </ul>
+    <span class="indicator">1/10</span>
+  </div> -->
+  <!-- </div>  -->
+  <button class="btn-restart hidden" id="btn-restart">
+    &circlearrowleft;
+  </button>
+  <button class="btn-next" id="btn-next">Відправити</button>
+  
+  
+  
+  <script
+  src="https://kit.fontawesome.com/44fbb523d4.js"
+  crossorigin="anonymous"
+  ></script>
+  <script src="/src/test.js"></script>
+</body>
+</html>
